@@ -80,7 +80,7 @@ class RemainingTimeDisplay extends Component {
    */
   updateContent(event) {
     if (this.player_.duration()) {
-      const formattedTime = formatTime(this.player_.remainingTime());
+      const formattedTime = formatTime(this.player_.remainingTimeDisplay());
 
       if (formattedTime !== this.formattedTime_) {
         this.formattedTime_ = formattedTime;
