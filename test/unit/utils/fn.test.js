@@ -4,6 +4,7 @@ import * as Fn from '../../../src/js/utils/fn.js';
 
 QUnit.module('fn', {
   beforeEach() {
+    sinon.stub(performance, 'now', Date.now);
     this.clock = sinon.useFakeTimers();
   },
   afterEach() {
